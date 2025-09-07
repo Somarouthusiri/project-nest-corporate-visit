@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Area</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header><h2>AREAS</h2></header>
+  <section>
+    <label>Select an Area:
+      <select onchange="if(this.value) window.location.href='/companies/' + this.value.toLowerCase();">
+        <option value="">Choose an Area</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+    </label>
+  </section>
+</body>
+</html>

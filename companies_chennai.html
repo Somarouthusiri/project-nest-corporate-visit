@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Companies in Chennai</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header><h2>Companies in Chennai</h2></header>
+  <section>
+    <div class="company-card">
+      <h3><a href="{{ url_for('company_details', city='chennai', company='accenture') }}">Accenture Solutions</a></h3>
+      <p>Global professional services company.</p>
+      <p>Email: caio.inbox@accenture.com</p>
+      <p>Website: <a href="#">www.accenture.com</a></p>
+    </div>
+    <div class="company-card">
+      <h3><a href="{{ url_for('company_details', city='chennai', company='techmahendra') }}">Tech Mahindra</a></h3>
+      <p>IT services and consulting multinational.</p>
+      <p>Email: contact@techmahindra.com</p>
+      <p>Website: <a href="#">www.techmahindra.com</a></p>
+    </div>
+    <a href="{{ url_for('area') }}">Back to Areas</a>
+  </section>
+</body>
+</html>

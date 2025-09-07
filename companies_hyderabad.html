@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Companies in Hyderabad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header><h2>Companies in Hyderabad</h2></header>
+  <section>
+    <div class="company-card">
+      <h3><a href="{{ url_for('company_details', city='hyderabad', company='bizcore') }}">Bizcore</a></h3>
+      <p>Business analytics and AI-driven strategies.</p>
+      <p>Email: contact@bizcore.com</p>
+      <p>Website: <a href="#">www.bizcore.com</a></p>
+    </div>
+    <div class="company-card">
+      <h3><a href="{{ url_for('company_details', city='hyderabad', company='technova') }}">TechNova Ltd.</a></h3>
+      <p>Leading software solutions provider.</p>
+      <p>Email: info@technova.com</p>
+      <p>Website: <a href="#">www.technova.com</a></p>
+    </div>
+    <a href="{{ url_for('area') }}">Back to Areas</a>
+  </section>
+</body>
+</html>
